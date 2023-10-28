@@ -102,11 +102,11 @@ let calificacion = Number(prompt('Escriba la calificacion de un examen (del 0 al
     {
         alert('Tu categoría es un MS')
     }
-    else(calificacion <= 60 && calificacion > 79)
+    else if(calificacion <= 60 && calificacion > 79)
     {
         alert('Tu categoría es un S')
     }
-    else(calificacion <= 0 && calificacion > 59)
+    else if(calificacion <= 0 && calificacion > 59)
     {
         alert('Tu categoría es un EP')
     }
