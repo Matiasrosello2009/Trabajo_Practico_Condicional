@@ -81,8 +81,33 @@ let contraseña = prompt('Para continua, ingrese la contraseña ')
     }
 }
 
-function multiploCinco (numMultiplo)
-let numMultiplo = prompt('Ingrese un número cualquiera ')
+function descuento (edadUsuario, precioProducto)
+let edadUsuario = prompt('Ingrese su edad por favor')
+let precioProducto = Number(prompt('Ingrese el precio del producto'))
 {
-    if (numMultiplo )
+    if (edadUsuario <= 65)
+    {
+        alert('El precio del producto con un 10% de descuento es: '+ ((precioProducto * 10)/100) - precioProducto + '$')
+    }
+    else
+    {
+        alert('el precio del producto sin el descuento es de: '+ precioProducto + '$')
+    }
+}
+
+function categotíaNotas (calificaion)
+let calificacion = Number(prompt('Escriba la calificacion de un examen (del 0 al 100)'))
+{
+    if(calificacion <= 80 && calificacion > 100)
+    {
+        alert('Tu categoría es un MS')
+    }
+    else(calificacion <= 60 && calificacion > 79)
+    {
+        alert('Tu categoría es un S')
+    }
+    else(calificacion <= 0 && calificacion > 59)
+    {
+        alert('Tu categoría es un EP')
+    }
 }
