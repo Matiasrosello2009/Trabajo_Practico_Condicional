@@ -111,3 +111,64 @@ let calificacion = Number(prompt('Escriba la calificacion de un examen (del 0 al
         alert('Tu categoría es un EP')
     }
 }
+
+function díaSemanal(numDía)
+let numDía = Number(prompt('Escriba un número del 1 al 7 y le diré de qué día de la semana estamos hablando. '))
+{
+    if (numDía == 1)
+    {
+        alert('Estamos hablando de Lunes. ')
+    }
+    else if (numDía == 2)
+    {
+        alert('Estamos hablando de Martes. ')
+    }
+    else if (numDía == 3)
+    {
+        alert('Estamos hablando de Miercoles. ')
+    }
+    else if (numDía == 4)
+    {
+        alert('Estamos hablando de Jueves. ')
+    }
+    else if (numDía == 5)
+    {
+        alert('Estamos hablando de Viernes. ')
+    }
+    else if (numDía == 6)
+    {
+        alert('Estamos hablando de Sabado. ')
+    }
+    else if (numDía == 7)
+    {
+        alert('Estamos hablando de Domingo. ')
+    }
+}
+
+function igualdadCadenas (texto1, texto2)
+let texto1 = prompt('Escriba una palabra cualquiera. ')
+let texto2 = prompt('Escriba otra palabra cualquiera (puede ser la misma palabra anterior). ')
+{
+    if (texto1 == texto2)
+    {
+        alert('Las cadenas de texto son iguales entre si. ')
+    }
+    else 
+    {
+        alert('Las cadenas de texto no son iguales entre si. ')
+    }
+}
+
+function calculadoraEdad (edadUsuario, añoActual)
+let añoActual = Number(prompt('Ingrese el año actual. '))
+let edadUsuario = Number(prompt('Ingrese su año de nacimiento. Voy a averiguar cuántos años tiene usted. '))
+{
+    if (añoActual == 2023)
+    {
+        alert('Su edad es '+ 2023 - edadUsuario + 'años. ')
+    }
+    else if (añoActual == 2024)
+    {
+        alert('Su edad actual es '+ 2024 - edadUsuario + 'años. ')
+    }
+}
