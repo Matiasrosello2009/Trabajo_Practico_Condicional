@@ -175,7 +175,7 @@ let texto2 = prompt('Escriba otra palabra cualquiera (puede ser la misma palabra
 function añoBisiesto (año)
 let año = Number(prompt('¿En qué año estamos?'))
 {
-    if(año / 400 == 0)||(año / 4 == 0 ) && (año / 100 != 0)
+    if(año / 400 == 0 || año / 4 == 0 && año / 100 != 0)
     {
         return alert('Es un año bisiesto. ')
     }
