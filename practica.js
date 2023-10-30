@@ -5,11 +5,11 @@ let nombre = prompt('Escribe tu nombre normal')
 {
     if (nombre == Nahuel || nombre == Santino)
     {
-        alert('Hola. ')
+        return alert('Hola. ')
     }
     else
     {
-        alert('Bienvenido amigo/a 👋')
+        return alert('Bienvenido amigo/a 👋')
     }
 }
 
@@ -18,11 +18,11 @@ let edadUsuario = Number(prompt('Ingrese su edad '))
 {
     if (edadUsuario <= 18)
     {
-        alert('Sos mayor de edad. ')
+        return alert('Sos mayor de edad. ')
     }
     else
     {
-        alert('Sos menor de edad. ')
+        return alert('Sos menor de edad. ')
     }
 }
 
@@ -31,27 +31,27 @@ let etapaUsuario = Number(prompt('Ingrese su edad para saber en qué etapa de su
 {
     if (etapaUsuario <= 1 && etapaUsuario >= 6)
     {
-        alert('Sos menor a un niño. ')
+        return alert('Sos menor a un niño. ')
     }
     else if (etapaUsuario <=6 && etapaUsuario > 12)
     {
-        alert('Sos un/a niño/a común y corriente. ')
+        return alert('Sos un/a niño/a común y corriente. ')
     }
     else if (etapaUsuario <=13 && etapaUsuario > 18)
     {
-        alert('Sos un/a adolescente. ')
+        return alert('Sos un/a adolescente. ')
     }
     else if (etapaUsuario <= 19 && etapaUsuario > 26)
     {
-        alert('Sos un/a joven. ')
+        return alert('Sos un/a joven. ')
     }
     else if (etapaUsuario <= 27 && etapaUsuario > 59)
     {
-        alert('Sos un adulto. 👍')
+        return alert('Sos un adulto. 👍')
     }
     else if (etapaUsuario <= 60)
     {
-        alert('Sos una persona adulta mayor. ')
+        return alert('Sos una persona adulta mayor. ')
     }
 }
 
@@ -60,11 +60,11 @@ let diaActual = prompt('¿Qué día es hoy?')
 {
     if (díaActual == sábado || díaActual == domingo)
     {
-        alert('Hoy es finde. Que lindo!!! ')
+        return alert('Hoy es finde. Que lindo!!! ')
     }
     else
     {
-        alert('Hoy hay que laburar :( ')
+        return alert('Hoy hay que laburar :( ')
     }
 }
 
@@ -73,11 +73,24 @@ let contraseña = prompt('Para continua, ingrese la contraseña ')
 {
     if (contraseña == secreto)
     {
-        alert('Acceso concedido')
+        return alert('Acceso concedido')
     }
     else
     {
-        alert('Acceso denegado')
+        return alert('Acceso denegado')
+    }
+}
+
+function multiplo(numero)
+let numero = Number(prompt('Ingrese un número al azar. No importa que tan grande sea. '))
+{
+    if (numero / 5 == 0)
+    {
+        return alert('El numero es multiplo de 5. ')
+    }
+    else
+    {
+        return alert('El numero no es un multiplo de 5. ')
     }
 }
 
@@ -87,11 +100,11 @@ let precioProducto = Number(prompt('Ingrese el precio del producto'))
 {
     if (edadUsuario <= 65)
     {
-        alert('El precio del producto con un 10% de descuento es: '+ ((precioProducto * 10)/100) - precioProducto + '$')
+        return alert('El precio del producto con un 10% de descuento es: '+ ((precioProducto * 10)/100) - precioProducto + '$')
     }
     else
     {
-        alert('el precio del producto sin el descuento es de: '+ precioProducto + '$')
+        return alert('el precio del producto sin el descuento es de: '+ precioProducto + '$')
     }
 }
 
@@ -100,15 +113,15 @@ let calificacion = Number(prompt('Escriba la calificacion de un examen (del 0 al
 {
     if(calificacion <= 80 && calificacion > 100)
     {
-        alert('Tu categoría es un MS')
+        return alert('Tu categoría es un MS')
     }
     else if(calificacion <= 60 && calificacion > 79)
     {
-        alert('Tu categoría es un S')
+        return alert('Tu categoría es un S')
     }
     else if(calificacion <= 0 && calificacion > 59)
     {
-        alert('Tu categoría es un EP')
+        return alert('Tu categoría es un EP')
     }
 }
 
@@ -117,31 +130,31 @@ let numDía = Number(prompt('Escriba un número del 1 al 7 y le diré de qué d�
 {
     if (numDía == 1)
     {
-        alert('Estamos hablando de Lunes. ')
+        return alert('Estamos hablando de Lunes. ')
     }
     else if (numDía == 2)
     {
-        alert('Estamos hablando de Martes. ')
+        return alert('Estamos hablando de Martes. ')
     }
     else if (numDía == 3)
     {
-        alert('Estamos hablando de Miercoles. ')
+        return alert('Estamos hablando de Miercoles. ')
     }
     else if (numDía == 4)
     {
-        alert('Estamos hablando de Jueves. ')
+        return alert('Estamos hablando de Jueves. ')
     }
     else if (numDía == 5)
     {
-        alert('Estamos hablando de Viernes. ')
+        return alert('Estamos hablando de Viernes. ')
     }
     else if (numDía == 6)
     {
-        alert('Estamos hablando de Sabado. ')
+        return alert('Estamos hablando de Sabado. ')
     }
     else if (numDía == 7)
     {
-        alert('Estamos hablando de Domingo. ')
+        return alert('Estamos hablando de Domingo. ')
     }
 }
 
@@ -151,11 +164,24 @@ let texto2 = prompt('Escriba otra palabra cualquiera (puede ser la misma palabra
 {
     if (texto1 == texto2)
     {
-        alert('Las cadenas de texto son iguales entre si. ')
+        return alert('Las cadenas de texto son iguales entre si. ')
     }
     else 
     {
-        alert('Las cadenas de texto no son iguales entre si. ')
+        return alert('Las cadenas de texto no son iguales entre si. ')
+    }
+}
+
+function añoBisiesto (año)
+let año = Number(prompt('¿En qué año estamos?'))
+{
+    if(año / 400 == 0)||(año / 4 == 0 ) && (año / 100 != 0)
+    {
+        return alert('Es un año bisiesto. ')
+    }
+    else
+    {
+        return alert('No es un año bisiesto. ')
     }
 }
 
@@ -165,10 +191,10 @@ let edadUsuario = Number(prompt('Ingrese su año de nacimiento. Voy a averiguar 
 {
     if (añoActual == 2023)
     {
-        alert('Su edad es '+ 2023 - edadUsuario + 'años. ')
+        return alert('Su edad es '+ 2023 - edadUsuario + 'años. ')
     }
     else if (añoActual == 2024)
     {
-        alert('Su edad actual es '+ 2024 - edadUsuario + 'años. ')
+        return alert('Su edad actual es '+ 2024 - edadUsuario + 'años. ')
     }
 }
